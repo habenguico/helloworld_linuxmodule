@@ -1,14 +1,14 @@
 #include <linux/kernel.h>
 #include <linux/module.h>
 
-int init_module(void)
+int module_init(void)
 {
     printk(KERN_INFO "Hello world!\n");
 
     return 0;
 }
 
-void cleanup_module(void)
+void module_cleanup(void)
 {
     printk(KERN_INFO "Goodbye World!\n");
 }

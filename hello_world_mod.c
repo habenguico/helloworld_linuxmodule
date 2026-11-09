@@ -4,6 +4,10 @@
 #include <linux/kernel.h>
 #include <linux/module.h>
 
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Haben");
+MODULE_VERSION("0.1");
+
 int hello_world(void)
 {
     printk(KERN_INFO "Hello world!\n");
